@@ -1,17 +1,16 @@
-
-<img src="https://www.kcoleman.me/images/avatar_images/ej.png">
-<img src="https://www.kcoleman.me/images/avatar_images/fg.png">
-<img src="https://www.kcoleman.me/images/avatar_images/fy.png">
-<img src="https://www.kcoleman.me/images/avatar_images/fz.png">
-<img src="https://www.kcoleman.me/images/avatar_images/gz.png">
-<img src="https://www.kcoleman.me/images/avatar_images/jp.png">
-<img src="https://www.kcoleman.me/images/avatar_images/kc.png">
-<img src="https://www.kcoleman.me/images/avatar_images/nz.png">
-<img src="https://www.kcoleman.me/images/avatar_images/qr.png">
-<img src="https://www.kcoleman.me/images/avatar_images/ru.png">
-<img src="https://www.kcoleman.me/images/avatar_images/rw.png">
-<img src="https://www.kcoleman.me/images/avatar_images/vn.png">
-<img src="https://www.kcoleman.me/images/avatar_images/fl.png">
+![ej](https://www.kcoleman.me/images/avatar_images/ej.png)
+![fg](https://www.kcoleman.me/images/avatar_images/fg.png)
+![fy](https://www.kcoleman.me/images/avatar_images/fy.png)
+![fz](https://www.kcoleman.me/images/avatar_images/fz.png)
+![gz](https://www.kcoleman.me/images/avatar_images/gz.png)
+![jp](https://www.kcoleman.me/images/avatar_images/jp.png)
+![kc](https://www.kcoleman.me/images/avatar_images/kc.png)
+![nz](https://www.kcoleman.me/images/avatar_images/nz.png)
+![qr](https://www.kcoleman.me/images/avatar_images/qr.png)
+![ru](https://www.kcoleman.me/images/avatar_images/ru.png)
+![rw](https://www.kcoleman.me/images/avatar_images/rw.png)
+![vn](https://www.kcoleman.me/images/avatar_images/vn.png)
+![fl](https://www.kcoleman.me/images/avatar_images/fl.png)
 
 # Letter Avatars with Serverless
 
@@ -46,20 +45,20 @@ Unfortunately, AWS does not support all of the configuration we need to do to ge
 #### Step 3a. Enable Binary Support for API Gateway
 Following this image, we need to add "*/*" to our binary media type.  API Gateway will look at the accept headers of the web request to determine whether or not to use the binary response.  If the accept headers don't exactly match what is listed here, the API will return JSON instead of our lovely png.  I opt for `*/*` because our API should always return a PNG, not matter what the accept headers are.
 
-<img src='https://www.kcoleman.me/images/avatar_images/binary_support.png' />
+![AWS binary support](https://www.kcoleman.me/images/avatar_images/binary_support.png)
 
 #### Step 3b. Configure Lambda function permissions
 In the API Gateway page click "Resources" -> "GET" -> "Integration request"
 
-<img src='https://www.kcoleman.me/images/avatar_images/aws_resources.png' />
+![AWS resources](https://www.kcoleman.me/images/avatar_images/aws_resources.png)
 
 Now click on the "pencil" icon next to the lambda function
 
-<img src='https://www.kcoleman.me/images/avatar_images/aws_edit.png' />
+![AWS edit](https://www.kcoleman.me/images/avatar_images/aws_edit.png)
 
 and then click on the check box.  This will trigger an alert saying it needs to add a permission to AWS lambda.  Click ok, and continue.
 
-<img src='https://www.kcoleman.me/images/avatar_images/aws_check.png' />
+![AWS check](https://www.kcoleman.me/images/avatar_images/aws_check.png)
 
 Woot! That is it for the configuration.
 
@@ -72,7 +71,7 @@ For these changes to take place, we need to redeploy our lambda app.
 
 In your web browser, hit the given url from the previous step, but replace `{initials}` with your initials.
 
-<img src='https://www.kcoleman.me/images/avatar_images/browser.png'>
+![Browser screen cap](https://www.kcoleman.me/images/avatar_images/browser.png)
 
 Now you can embed these images in images tags or use them on your native mobile app just like you would with a regularly uploaded image.
 
