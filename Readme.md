@@ -14,7 +14,7 @@
 
 # Letter Avatars with Serverless
 
-The full tutorial on how to create this repository can be found here: 
+The full tutorial on how to create this repository can be found on my blog: (Serverless image generation)[https://www.kcoleman.me/2017/03/11/serverless-image-generation.html].
 
 <!-- TOC -->
 
