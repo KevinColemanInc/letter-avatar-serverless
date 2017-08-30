@@ -28,15 +28,16 @@ Successful deploy output
   Sucessful deploy output:
 
       Service Information
-      service: modernwaffle
+      service: letter-avatar
       stage: dev
       region: us-east-1
+      stack: letter-avatar-dev
       api keys:
         None
       endpoints:
-        GET - https://{app}.execute-api.us-east-1.amazonaws.com/dev/profilePic/{initials}
+        GET - https://{appId}.execute-api.us-east-1.amazonaws.com/dev/letterAvatar/{initials}
       functions:
-        profilePic: modernwaffle-dev-profilePic
+        profilePic: letter-avatar-dev-profilePic
 ```
 
 ### Step 2. Configure AWS Lambda
