@@ -105,5 +105,3 @@ In your web browser, hit the given url from the previous step, but replace `{ini
 ![Browser screen cap](https://www.kcoleman.me/images/avatar_images/browser.png)
 
 Now you can embed these images in images tags or use them on your native mobile app just like you would with a regularly uploaded image.
-
-_For the [latest source code](https://github.com/kevincolemaninc/letter-avatar-serverless)_
